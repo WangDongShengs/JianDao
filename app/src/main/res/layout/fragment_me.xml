@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/cl_rl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cl_rl_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/mine_pic" />
+
+        <TextView
+            android:id="@+id/cl_rl_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cl_rl_image"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="3dp"
+            android:text="未登陆"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cl_rl_tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="3dp"
+            android:text="登陆一下，内容更精彩"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cl_ll_jifeng"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/cl_rl">
+
+        <ImageView
+            android:id="@+id/iv_rl_jifeng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/mien_jifen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="我的积分"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_rl_jifeng"
+            android:textColor="@color/loginTexta"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/mine_fan" />
+    </RelativeLayout>
+    <View
+        app:layout_constraintTop_toBottomOf="@id/cl_ll_jifeng"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/loginTextb"
+        />
+    <RelativeLayout
+        android:id="@+id/cl_ll_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/cl_ll_jifeng">
+
+        <ImageView
+            android:id="@+id/iv_rl_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/mine_start" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="我的收藏"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_rl_start"
+            android:textColor="@color/loginTexta"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/mine_fan" />
+    </RelativeLayout>
+    <View
+        app:layout_constraintTop_toBottomOf="@id/cl_ll_start"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/loginTextb"
+        />
+    <RelativeLayout
+        android:id="@+id/cl_ll_mes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/cl_ll_start">
+
+        <ImageView
+            android:id="@+id/iv_rl_mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/mine_mes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="我的消息"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_rl_mes"
+            android:textColor="@color/loginTexta"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/mine_fan" />
+    </RelativeLayout>
+    <View
+        app:layout_constraintTop_toBottomOf="@id/cl_ll_mes"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#D6D3D3"
+        />
+    <RelativeLayout
+        android:id="@+id/cl_ll_set"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/cl_ll_mes">
+
+        <ImageView
+            android:id="@+id/iv_rl_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/mine_set" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="设置"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_rl_set"
+            android:textColor="@color/loginTexta"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/mine_fan" />
+    </RelativeLayout>
+    <View
+        app:layout_constraintTop_toBottomOf="@id/cl_ll_set"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#D6D3D3"
+        />
+    <Button
+        android:id="@+id/btn_me_item"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/pager_button"
+        android:text="登录"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/cl_rl"
+        app:layout_constraintRight_toRightOf="@id/cl_rl" />
+
+</android.support.constraint.ConstraintLayout>

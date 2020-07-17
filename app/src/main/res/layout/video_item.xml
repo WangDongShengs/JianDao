@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.jzvd.JzvdStd
+        android:id="@+id/vv_cl_video"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/tv_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/loginTexta"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/vv_cl_video"
+        app:layout_constraintStart_toStartOf="@+id/vv_cl_video"
+        app:layout_constraintTop_toBottomOf="@id/vv_cl_video" />
+
+    <TextView
+        android:id="@+id/tv_cl_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="10dp"
+        android:textColor="@color/loginTextb"
+        app:layout_constraintEnd_toEndOf="@+id/vv_cl_video"
+        app:layout_constraintStart_toStartOf="@+id/vv_cl_video"
+        app:layout_constraintTop_toBottomOf="@id/tv_video"
+     />
+</android.support.constraint.ConstraintLayout>

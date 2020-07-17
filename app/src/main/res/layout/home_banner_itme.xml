@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.youth.banner.Banner
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/banner_home_item"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+    <ProgressBar
+        android:id="@+id/pb_home_item"
+        app:layout_constraintTop_toBottomOf="@id/banner_home_item"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="4"
+        android:progress="0"
+        android:progressDrawable="@drawable/select_prossbar" />
+</android.support.constraint.ConstraintLayout>
